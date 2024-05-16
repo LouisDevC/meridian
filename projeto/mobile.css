@@ -18,6 +18,9 @@
     nav{
         display: none;
     }
+    main{
+        padding: 60px;
+    }
     .container{
         display: inline-block;
         width: 20vw;
