@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@font-face {
+    font-family: 'Amegap';
+    src: url(fonts/Amegap.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor0:#7A439D;
+    --cor1:#F863BE;
+    --cor2:#EEC0EB;
+    --cor3:#FAE3FF;
+    --quicksand: "Quicksand", sans-serif;
+}
+@media screen and (max-width: 955px){
+    nav{
+        display: none;
+    }
+    .container{
+        width: 20vw;
+        height: 28vh;
+        margin: 10px;
+    }
+    .container img{
+        width: 20vw;
+        height: 20vh;
+    }
+    .container p{
+        font-family: var(--quicksand);
+        font-size: 0.6em;
+    }
+    footer div{
+        margin-right: 130px;
+    }
+}
