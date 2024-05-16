@@ -14,14 +14,15 @@
     --cor3:#FAE3FF;
     --quicksand: "Quicksand", sans-serif;
 }
-@media screen and (max-width: 955px){
+@media screen and (min-width: 500px) and (max-width: 955px){
     nav{
         display: none;
     }
     .container{
+        display: inline-block;
         width: 20vw;
-        height: 28vh;
-        margin: 10px;
+        height: 30vh;
+        margin: 0px;
     }
     .container img{
         width: 20vw;
@@ -33,5 +34,30 @@
     }
     footer div{
         margin-right: 130px;
+    }
+}
+@media screen and (max-width: 500px){
+    nav{
+        display: none;
+    }
+    .container{
+        width: 20vw;
+        height: 20vh;
+        padding: 5px;
+        padding-bottom: 40px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .container img{
+        width: 20vw;
+        height: 20vh;
+        margin: auto;
+    }
+    .container p{
+        font-family: var(--quicksand);
+        font-size: 0.1em;
+    }
+    footer div{
+        margin-right: 100px;
     }
 }
