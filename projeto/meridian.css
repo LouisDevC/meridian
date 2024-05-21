@@ -181,9 +181,6 @@ span img:hover{
     border-radius: 0% 50% 50% 50%;
     transition: 1s;
 }
-.contato{
-    text-align: center;
-}
 .container{
     display: inline-block;
     border: 3px solid var(--cor0);
