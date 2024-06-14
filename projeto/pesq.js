@@ -1,1 +1,0 @@
-voce não sabe js seu bosta
