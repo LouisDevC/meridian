@@ -1,0 +1,21 @@
+header{
+    height: 100px;
+}
+.h-icon{
+    color: white;
+    font-size: 3rem;
+}
+.header-list, .gh{
+    color: white;
+}
+.header-container{
+    height: 100%;
+}
+li{
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+li:hover, .gh:hover{
+    color: rgb(178, 0, 233);
+    cursor: pointer;
+}
