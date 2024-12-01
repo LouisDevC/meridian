@@ -111,41 +111,69 @@
   .search-bar button:hover {
     background-color: #462064;
   }
-
-  .slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+/* Animação de Piscar */ 
+@keyframes flash-white { 
+  0% { 
+    opacity: 1; 
+  } 
+  100% { 
+    opacity: 0; 
+  } 
+}
+@keyframes over-flash-white{
+  0%{
+    opacity: 0;
   }
-  
-  .slide {
-    display: none; 
-    position: absolute;
-    width: 100%;
+  100%{
+    opacity: 1;
   }
-  
-  .slide img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .fade {
-    animation: fade 1.5s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
+}
+.fade {
+  animation: flash-white 1s
+}
+.over-fade{
+  opacity: 0;
+  animation: over-flash-white 1s;
+}
+.slideShow-container{
+  margin: auto;
+  width: 50vw;
+  height: 70vh;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 5px solid #462064;
+  display: flex;
+}
+.slideShow-container img{
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
+.image-btn-container{
+  margin: auto;
+  width: 50%;
+  height: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.image-btn{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: none;
+  background-color: #877db962;
+  transition: .3s;
+  cursor: pointer;
+}
+.image-btn:hover{
+  transform: translateY(-2px);
+  background-color: #877db9a9;
 }
   /* Serviços */
   .service-container {
-    background-color: #fff;
     text-align: center;
     font-family: 'Verdana';
   }
