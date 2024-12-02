@@ -70,7 +70,7 @@
 }
 
 .logo-title {
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Sail', serif;
     font-size: 3rem; 
     color: #fff;
   }
@@ -147,7 +147,7 @@
 }
 .slideShow-container img{
   width: 100%;
-  height: 100%;
+  height: 90%;
   transition: 1s ease-in-out;
 }
 .image-btn-container{
