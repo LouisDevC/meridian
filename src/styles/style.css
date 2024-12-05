@@ -1,3 +1,4 @@
+
 /* main */
 .slideShow-container{
   margin: auto;
@@ -84,6 +85,9 @@
     background-color: #fbd8ff;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.329);
   }
+  .service p{
+    color: #A83E6A;
+  }
   .service img{
     width: 70%;
     border-radius: 1rem;
@@ -101,4 +105,148 @@
   }
   .service ul li {
     padding: 5px 0;
+  }
+  /* modal */
+  .modal-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    height: 100vh;
+  }
+  .modal{
+    background-color: white;
+    width: 50%;
+    height: 70%;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 5px black;
+    padding: 2rem;
+    scroll-behavior: smooth;
+    z-index: 10000;
+    position: relative;
+  }
+  .closed{
+    display: none;
+  }
+  .open{
+    display: block;
+    overflow: hidden;
+  }
+  .modal h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    border-bottom: 2px solid #A83E6A;
+    margin-bottom: 1rem;
+    font-family: 'Sail';
+  }
+  .modal .desc-on-modal{
+    font-weight: bold;
+    padding: .5rem;
+    margin-bottom: 1rem;
+  }
+  #desc-modal{
+    font-family: 'verdana';
+    text-align: justify;
+    padding: .5rem 2.5rem;
+    text-transform: capitalize;
+    margin: 2rem 0;
+  }
+  .modal .price{
+    padding: .5rem 0;
+    background-color: #A83E6A;
+    width: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 0 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+  }
+  .modal-contato{
+    display: flex;
+    gap: 1rem;
+  }
+  .modal-contato button, .modal-contato a{
+    flex: 1;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color:white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.274);
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .modal-contato button:first-child{
+    background-color: #A83E6A;
+  }
+  .modal-contato a{
+    text-decoration: none;
+    background-color: #462064;
+  }
+  .modal-contato button:hover, .modal-contato a:hover{
+    opacity: 1;
+  }
+  .all-desc{
+    display: flex;
+    align-items: center;
+  }
+  .all-desc img{
+    width: 20%;
+    height: 20%;
+    border: 4px solid #A83E6A;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+  }
+  #mail-form{
+    display: flex;
+    flex-direction: column;
+  }
+  #mail-form label{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  #mail-form input{
+    padding: 5px;
+    border-radius: 2rem;
+    border: 1px solid #462064;
+  }
+  #mail-form textarea{
+    margin-bottom: 1rem;
+    height: 100px;
+    border-radius: 1rem;
+    padding: .5rem 2rem;
+  }
+  #mail-form input[type="submit"]{
+    color: white;
+    background-color: #A83E6A;
+    font-weight: bold;
+  }
+  .modal .up{
+    position: fixed;
+    top: 115px;
+    color: white;
+    background-color: #A83E6A;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+  .modal .close{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: #462064;
+    color: white;
   }

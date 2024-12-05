@@ -13,23 +13,24 @@
   <!-- meus scripts -->
   <script src="src/scripts/slide.js" defer></script>
   <script src="src/scripts/search.js" defer></script>
+  <script src="src/scripts/modal.js" defer></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="https://i.ibb.co/jMVwNyb/tarot.png" alt="🔮" class="logo">
+            <img src="https://i.ibb.co/jMVwNyb/tarot.png" alt="logo espaço meridian" class="logo">
             <div class="logo-container-text">
                 <h1 class="logo-title">Meridian</h1>
                 <p class="logo-subtitle">Terapias Holísticas e Oraculares</p>
             </div>
         </div>
       <ul class="nav-links"> 
-        <li><a href="index.html" title="página de início">Início</a></li>
+        <li><a href="index.html" title="página de início">início</a></li>
         <li><a href="src/Pages/sobre_mim.html" title="página de informação sobre a autora">Sobre</a></li>
         <li><a href="src/Pages/services.html">Produtos</a></li>
-        <li><a href="#consultas">Agendar Consulta</a></li>
-        <li><a href="#atendimentos">Atendimentos</a></li>
+        <li><a href="#consultas">projeto caridade</a></li>
+        <li><a href="#atendimentos">feedback</a></li>
       </ul>
       <div class="search-bar">
         <input type="text" placeholder="Buscar..." id="search-input" aria-label="barra de pesquisa - digite o que deseja procurar">
@@ -38,19 +39,21 @@
     </nav>
   </header>
   <main>
-    <div class="slideShow-container" aria-hidden="false">
-        <img src="src/images/abd.png" alt="Vanessa Abdallah -terapeuta oraculista, agende agora" class=" slide">
-        <img src="src/images/baralho.png" alt="Imagem 2" class="slide">
-        <img src="src/images/reiki.png" alt="Imagem 3" class="slide">
-        <img src="src/images/banhos.png" alt="Imagem 3" class="slide">
+    <!-- alt vazio pois quero que leitores de tela ignorem as imagens -->
+    <div class="slideShow-container">
+        <img src="src/images/abd.png" alt="" class=" slide">
+        <img src="src/images/baralho.png" alt="" class="slide">
+        <img src="src/images/reiki.png" alt="" class="slide">
+        <img src="src/images/banhos.png" alt="" class="slide">
         <img src="src/images/pets.png" alt="" class="slide">
     </div>
-    <div class="image-btn-container" aria-hidden="false">
-      <button class="image-btn" tabindex="-1"></button>
-      <button class="image-btn" tabindex="-1"></button>
-      <button class="image-btn" tabindex="-1"></button>
-      <button class="image-btn" tabindex="-1"></button>
-      <button class="image-btn" tabindex="-1"></button>
+    <!-- tabindex -1 para que os botões referente a imagem não sejam acessados via tab, caso sejam acessados utilizei aria label para descrição -->
+    <div class="image-btn-container">
+      <button class="image-btn" tabindex="-1" aria-label="Vanessa Abdallah -terapeuta oraculista, agende agora"></button>
+      <button class="image-btn" tabindex="-1" aria-label="consulta com baralho cigano"></button>
+      <button class="image-btn" tabindex="-1" aria-label="sessão de reiki usui"></button>
+      <button class="image-btn" tabindex="-1" aria-label="banhos de ervas e escalda pés"></button>
+      <button class="image-btn" tabindex="-1" aria-label="reiki em pets"></button>
     </div>
   <!-- Serviços -->
    <section class="service-container" aria-label="sessão de serviços" tabindex="0">
@@ -58,19 +61,19 @@
     <h3>Baralho Cigano</h3>
     <div class="services">
         <article class="service" tabindex="0">
-          <img src="src/images/service-images/rings.jpeg" alt="Área amorosa - comprometidos/parceiros">
+          <img src="src/images/service-images/rings.jpeg" alt="par de alianças">
           <p>Área amorosa - Comprometidos/parceiros</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/arrow.jpeg" alt="Área amorosa - ficantes">
+            <img src="src/images/service-images/arrow.jpeg" alt="arco e flecha do amor">
             <p>Área amorosa - Ficantes</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/ballon.jpeg" alt="Área amorosa - solteiros">
+            <img src="src/images/service-images/ballon.jpeg" alt="balões de festa">
             <p>Área amorosa - Solteiros</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/broken-heart.jpeg" alt="Área amorosa - ex parceiros">
+            <img src="src/images/service-images/broken-heart.jpeg" alt="coração partido">
             <p>Área amorosa - Ex parceiros</p>
         </article>
         <article class="service" tabindex="0">
@@ -78,63 +81,91 @@
             <p>Taça do Amor</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/afrodite.png" alt="templo de afrodite">
+            <img src="src/images/service-images/afrodite.png" alt="ícone da deusa afrodite">
             <p>Templo de Afrodite</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/bff.png" alt="O que o crush pensa de mim">
+            <img src="src/images/service-images/bff.png" alt="envelope com carta de amor">
             <p>Pensamentos e sentimentos do Crush</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/work.jpeg" alt="Área profissional">
+            <img src="src/images/service-images/work.jpeg" alt="maleta de trabalho e engrenagem">
             <p>Área Profissional</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/pig.png" alt="Área financeira">
+            <img src="src/images/service-images/pig.png" alt="cofre de porquinho">
             <p>Área Financeira</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/date.jpeg" alt="Consulta mensal">
+            <img src="src/images/service-images/date.jpeg" alt="Calendário">
             <p>Consulta Mensal</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/key.jpeg" alt="A chave decisiva">
+            <img src="src/images/service-images/key.jpeg" alt="A chave">
             <p>A chave decisiva</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/cristal-ball.jpeg" alt="Consulta completa">
+            <img src="src/images/service-images/cristal-ball.jpeg" alt="bola de cristal">
             <p>Consulta completa</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/talk.jpeg" alt="Consulta -terapeutica">
+            <img src="src/images/service-images/talk.jpeg" alt="balões de conversa">
             <p>Consulta Terapeutica</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/cards.jpeg" alt="Perguntas avulsas">
+            <img src="src/images/service-images/cards.jpeg" alt="cartas">
             <p>Perguntas avulsas</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/star.png" alt="Jogo da estrela">
+            <img src="src/images/service-images/star.png" alt="estrela">
             <p>Jogo da Estrela</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/caridade.png" alt="projeto caridade ">
+            <img src="src/images/service-images/caridade.png" alt="mão estendida ao coração">
             <p>Projeto Caridade </p>
         </article>
     </div>
     <h3>Reiki</h3>
     <div class="services">
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/hand.jpeg" alt="heiki usui">
+            <img src="src/images/service-images/hand.jpeg" alt="mãos">
             <p>Sessão de Reiki Usui</p>
         </article>
         <article class="service" tabindex="0">
-            <img src="src/images/service-images/pets-service.jpeg" alt="heiki gratuito para pets">
-            <p>Reiki em Pets</p>
+            <img src="src/images/service-images/pets-service.jpeg" alt="mão afagando cachorro">
+            <p>Reiki gratuito em Pets</p>
         </article>
-        
     </div>
    </section>
+   <div class="modal-container closed" id="modal" aria-hidden="true">
+    <section class="modal open">
+      <h4 id="title-modal">área amorosa - solteiros</h4>
+      <div class="all-desc">
+        <span class="desc-on-modal">descrição:</span>
+        <p id="desc-modal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur nostrum illo odio. Ipsam odio atque quis deleniti nisi molestias, neque, tempore, reprehenderit nemo necessitatibus non? Doloremque deserunt amet sunt. Lorem ipsum dolor sit amet.</p>
+        <img src="src/images/service-images/afrodite.png" alt="" id="modal-image">
+      </div>
+      <p id="price" class="price">100$</p>
+      <div class="modal-contato">
+        <button>whatsapp <i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+        <a href="#mail-form">formulário de e-mail<i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <form id="mail-form">
+        <h4>preencha os campos abaixo</h4>
+        <label for="name">Nome e sobrenome:</label>
+        <input type="text" name="name" id="name-input">
+        <label for="tell">contato:</label>
+        <input type="tel" name="tell" id="surname-input">
+        <label for="mail">e-mail:</label>
+        <input type="email" name="mail" id="mail-input">
+        <label for="subject">contexto da história:</label>
+        <textarea name="subject" id="subject-input"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+      <a href="#close" class="up"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      <button id="close" class="close"><i class="fa fa-close" aria-hidden="true"></i></button>
+    </section>
+  </div>
   </main>
 
   <!-- Footer -->
@@ -142,9 +173,9 @@
     <div class="footer-content">
       <p>&copy; 2024 Espaço Meridian ~ Todos os direitos reservados.</p>
       <div class="socials">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
