@@ -1,8 +1,8 @@
 /* main */
 .slideShow-container{
   margin: auto;
-  width: 50vw;
-  height: 70vh;
+  width: 60vw;
+  height: 80vh;
   margin-top: 20px;
   overflow: hidden;
   border-radius: 2rem;
@@ -11,7 +11,7 @@
 }
 .slideShow-container img{
   width: 100%;
-  height: 90%;
+  height: 100%;
   transition: 1s ease-in-out;
 }
 .image-btn-container{
@@ -30,11 +30,11 @@
   border: none;
   background-color: #877db962;
   transition: .3s;
-  cursor: pointer;
+  cursor: crosshair;
 }
 .image-btn:hover{
   transform: translateY(-2px);
-  background-color: #877db9a9;
+  background-color: #fbd8ff;
 }
   /* Serviços */
   .service-container {
@@ -61,22 +61,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 50px;
     padding: 20px 100px;
     font-family: 'Verdana'; 
   }
   
   .service {
-    background: #f3e5f5;
+    background-color: #f3e5f5;
     border-radius: 10px;
     width: 250px;
     height: 250px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+    cursor: crosshair;
+    transition: .3s;
+  }
+  .service:hover{
+    transform: translateY(-5px);
+    background-color: #fbd8ff;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.329);
   }
   .service img{
     width: 70%;
